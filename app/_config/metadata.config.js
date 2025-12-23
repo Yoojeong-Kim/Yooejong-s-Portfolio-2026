@@ -1,6 +1,6 @@
 /** @type {import('next').Metadata} */
 export const rootMetadata = {
-  metadataBase: new URL('https://dennis-snellenberg-portfolio.vercel.app/'),
+  metadataBase: new URL('https://yooejong-s-portfolio-2026.vercel.app/'),
   title: {
     template: '%s | Dennis Snellenberg',
     default: 'Dennis Snellenberg • Freelance Designer & Developer',
