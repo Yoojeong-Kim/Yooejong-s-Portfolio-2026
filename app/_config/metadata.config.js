@@ -3,7 +3,7 @@ export const rootMetadata = {
   metadataBase: new URL('https://yooejong-s-portfolio-2026.vercel.app/'),
   title: {
     template: '%s | Yooejeong Kim',
-    default: 'Yoojeong Kim • Freelance Designer & Developer',
+    default: 'Yoojeong Kim • Student Designer & Developer',
   },
   description:
     'Helping brands thrive in the digital world. Located in The Netherlands. Delivering tailor-made digital designs and building interactive websites from scratch. © Code by Dennis',
