@@ -9,7 +9,7 @@ import { MagneticButton, ParallaxFade, ParallaxReveal } from '@/components';
 import { Title, Wrapper } from './index.styled';
 
 const phrase =
-  'Helping brands to stand out in the digital era. Together we will set the new status quo. No nonsense, always on the cutting edge.';
+  'Currently pursuing my Master&apos;s in Interaction Science at Sungkyunkwan University, I am a researcher at AXIS Lab dedicated to the &apos;human&apos; side of AI. My journey spans from exhibiting interactive art at Ars Electronica to winning prestigious national awards for AI-driven social solutions. I believe technology is at its best when it creates a smile or heals a heart. Let&apos;s create something meaningful together.';
 
 export function Description() {
   return (
