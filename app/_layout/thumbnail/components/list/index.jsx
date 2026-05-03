@@ -2,20 +2,23 @@
 
 import Link from 'next/link';
 
-import { thumbnailOptions } from '@/data';
+import { mainThumbnailOptions, moreThumbnailOptions } from '@/data';
 
 /**
  * @param {Object} props
  * @param {(index: number) => void} props.handlePointerEnter
  * @param {(index: number) => void} props.handlePointerLeave
  * @param {(x: number, y: number) => void} props.moveItems
+ * @param {boolean} [props.showMore]
  */
 export function ThumbnailList({
   handlePointerEnter,
   handlePointerLeave,
   moveItems,
+  showMore = false,
 }) {
-  const items = thumbnailOptions.map(({ href, title }, index) => {
+  const displayOptions = showMore ? moreThumbnailOptions : mainThumbnailOptions;
+  const items = displayOptions.map(({ href, title }, index) => {
     const id = index;
     return (
       <li

@@ -1,11 +1,8 @@
-import { Transition } from '@/layout';
+'use client';
+
 import { CldImage } from 'next-cloudinary';
 
-/** @type {import('next').Metadata} */
-export const metadata = {
-  title: 'About',
-  description: 'Hello! I am a researcher and media artist exploring the heartbeat behind the screen. My work focuses on how humans form emotional bonds with AI and how technology can foster deeper connections between people. Step into my world, and let\'s explore the future of interaction together.',
-};
+import { Transition } from '@/layout';
 
 export default function About() {
   return (

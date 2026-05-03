@@ -6,18 +6,19 @@ import { motion } from 'framer-motion';
 import { CldImage } from 'next-cloudinary';
 
 import { Center } from '@/components';
-import { thumbnailOptions } from '@/data';
+import { mainThumbnailOptions, moreThumbnailOptions } from '@/data';
 import { randomId } from '@/utils';
 
 const MotionComponent = motion(Center);
 
 export const ThumbnailModal = forwardRef(
   /**
-   * @param {import('react').HTMLAttributes<HTMLElement> & { variants: import('framer-motion').Variants; active: boolean; index: number;}} props
+   * @param {import('react').HTMLAttributes<HTMLElement> & { variants: import('framer-motion').Variants; active: boolean; index: number; showMore?: boolean }} props
    * @param {import('react').ForwardedRef<HTMLElement>} ref
    */
-  function ThumbnailModal({ variants, active, index, ...props }, ref) {
-    const items = thumbnailOptions.map(({ title, image }) => {
+  function ThumbnailModal({ variants, active, index, showMore = false, ...props }, ref) {
+    const displayOptions = showMore ? moreThumbnailOptions : mainThumbnailOptions;
+    const items = displayOptions.map(({ title, image }) => {
       const id = randomId();
       return (
         <Center key={id} className='h-full w-full'>
