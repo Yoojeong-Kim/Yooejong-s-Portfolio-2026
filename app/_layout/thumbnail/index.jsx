@@ -41,7 +41,7 @@ export function Thumbnail() {
     >
       <div className='my-8 flex flex-col gap-10'>
         <ThumbnailLabel>
-          {showMore ? 'All works' : 'Recent work'}
+          {showMore ? 'All works' : 'works'}
         </ThumbnailLabel>
         <ThumbnailList
           handlePointerEnter={handlePointerEnter}

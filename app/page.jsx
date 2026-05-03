@@ -1,4 +1,5 @@
 import {
+  Awards,
   Contact,
   Description,
   Header,
@@ -24,6 +25,7 @@ export default function Home() {
         <Description />
         <Thumbnail />
         <Project />
+        <Awards />
       </main>
       <Contact />
     </Transition>
