@@ -1,4 +1,5 @@
 import { Transition } from '@/layout';
+import { CldImage } from 'next-cloudinary';
 
 /** @type {import('next').Metadata} */
 export const metadata = {
@@ -11,6 +12,15 @@ export default function About() {
     <Transition>
       <div className="container mx-auto px-4 py-8">
         <h1 className="text-4xl font-bold mb-6">About Me</h1>
+        <div className="mb-6 flex justify-center">
+          <CldImage
+            src='나_g2c8r7'
+            className='rounded-full object-cover'
+            width={128}
+            height={128}
+            alt='Yoojeong Kim Profile Picture'
+          />
+        </div>
         <p className="text-lg leading-relaxed">
           Hello! I am a researcher and media artist exploring the heartbeat behind the screen. My work focuses on how humans form emotional bonds with AI and how technology can foster deeper connections between people. Step into my world, and let&apos;s explore the future of interaction together.
         </p>

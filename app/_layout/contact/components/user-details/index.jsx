@@ -20,10 +20,10 @@ export function UserDetails({ transformX }) {
         <div className='flex items-center gap-8'>
           <ImageWrapper>
             <CldImage
-              src='Dennis-Portfolio/images/mqtwxh5znybowgaljrbp'
+              src='나_g2c8r7'
               className='rounded-full object-cover'
               fill={true}
-              alt='Dennis Snellenberg Profile Picture'
+              alt='Yoojeong Kim Profile Picture'
             />
           </ImageWrapper>
           <MainTitle>Let’s work</MainTitle>
